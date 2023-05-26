@@ -1,4 +1,4 @@
-/**Se crea una nueva interfaz llamada ITriangulo que incluya únicamente …
+/**Caso de usuario 1: Se crea una nueva interfaz llamada ITriangulo que incluya únicamente …
 …los métodos necesarios para el cliente de Triangulo. Por ejemplo, 
 si el cliente solo necesita el cálculo del área del triángulo, 
 se define en ITriangulo únicamente el método area().
@@ -11,6 +11,7 @@ que el cliente necesita y evitará depender de funcionalidades no utilizadas. */
 public class Triangulo implements ITriangulo {
 
 	private float base;
+	private float altura;
 	private float altura;
 
 	public Triangulo(float base, float altura) {
@@ -34,7 +35,7 @@ public class Triangulo implements ITriangulo {
 		this.altura = altura;
 	}
 
-	public float area() {
+	/*public float area() {
 		return (getBase() * getAltura()) / 2;
 	}
 }
